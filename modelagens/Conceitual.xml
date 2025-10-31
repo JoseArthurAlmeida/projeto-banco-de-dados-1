@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<DIAGRAMA ID="1" TIPO="tpConceitual" UniversalUnicID="28B1-E5-12F6-E-B3A2-54-B1">
+<DIAGRAMA ID="1" TIPO="tpConceitual" UniversalUnicID="A5CE-44-B8DF-98-E0A4-41-CE">
     <InfoDiagrama ID="1">
         <Versao Valor="3.2.0"/>
         <Autores/>
@@ -10,13 +10,13 @@
         <Alinhamento_h Valor="60"/>
         <Zoom Valor="100"/>
         <Fonte Estilo="1" Nome="Arial" Tamanho="12"/>
-        <Localizacao Left="78" Top="152"/>
+        <Localizacao Left="22" Top="188"/>
         <Realce Valor="false"/>
     </InfoDiagrama>
     <Entidade ID="2">
         <Bounds Height="58" Left="126" Top="116" Width="120"/>
         <DisablePainted Valor="false"/>
-        <Texto>Usuário</Texto>
+        <Texto>Usuario</Texto>
         <Observacao/>
         <Dicionario/>
         <Fonte Estilo="1" Nome="Arial" Tamanho="12"/>
@@ -208,10 +208,8 @@
         <Ligacoes PontaA="31" PontaB="30"/>
         <Pontos>
             <Ponto Left="561" Top="180"/>
-            <Ponto Left="570" Top="180"/>
-            <Ponto Left="570" Top="170"/>
-            <Ponto Left="562" Top="170"/>
-            <Ponto Left="562" Top="168"/>
+            <Ponto Left="577" Top="180"/>
+            <Ponto Left="577" Top="168"/>
         </Pontos>
     </Ligacao>
     <Atributo ID="33">
@@ -245,8 +243,8 @@
         <Ligacoes PontaA="33" PontaB="30"/>
         <Pontos>
             <Ponto Left="562" Top="197"/>
-            <Ponto Left="574" Top="197"/>
-            <Ponto Left="574" Top="168"/>
+            <Ponto Left="585" Top="197"/>
+            <Ponto Left="585" Top="168"/>
         </Pontos>
     </Ligacao>
     <Atributo ID="35">
@@ -1070,8 +1068,8 @@
         <Pontos>
             <Ponto Left="662" Top="356"/>
             <Ponto Left="636" Top="356"/>
-            <Ponto Left="636" Top="321"/>
-            <Ponto Left="645" Top="321"/>
+            <Ponto Left="636" Top="323"/>
+            <Ponto Left="645" Top="323"/>
         </Pontos>
     </Ligacao>
     <Atributo ID="197">
@@ -1173,7 +1171,7 @@
             <Fonte Estilo="1" Nome="Arial" Tamanho="12"/>
             <Ancorado Valor="false"/>
             <TamanhoAutmatico Valor="true"/>
-            <Card Valor="3"/>
+            <Card Valor="2"/>
             <MovimentacaoManual Valor="false"/>
             <Papel Valor=""/>
         </Cardinalidade>
