@@ -6,12 +6,12 @@ Este repositório contém a modelagem de banco de dados para uma loja virtual, d
 
 -   [Minimundo](docs/Mini%20mundo%20-%20Loja%20Virtual.md) - Descrição detalhada do domínio do problema
 
-## Modelagem
+## Esquemas
 
 O projeto inclui:
 
--   Modelo Conceitual (brModelo)
-<!-- -   Modelo Lógico (brModelo) -->
+-   [Esquema Conceitual](modelagens/Conceitual.png)
+-   [Esquema Lógico](modelagens/Logico.png)
 
 ## Continuidade do Banco de Dados
 
