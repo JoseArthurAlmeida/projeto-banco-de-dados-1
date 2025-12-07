@@ -1,4 +1,4 @@
-# Mini mundo \- Loja Virtual
+# Minimundo \- Loja Virtual
 
 A loja virtual possui um ambiente onde interagem dois tipos de usuários: **Cliente** e **Administrador**. O foco central do sistema são os **produtos**, que representam os itens disponíveis para venda, cada um caracterizado por um nome, preço, imagem e descrições. Para facilitar a organização e a navegação, todo **produto** pertence a uma **categoria** específica, que o classifica de acordo com sua natureza.
 
@@ -8,3 +8,6 @@ O Cliente, por outro lado, é o consumidor final que navega pela loja visualizan
 
 <h2>Esquema Conceitual</h2>
 <img src="../modelagens/Conceitual.png" alt="Esquema Conceitual">
+
+<h2>Esquema Lógico</h2>
+<img src="../modelagens/Logico.png" alt="Esquema Lógico">
