@@ -2,14 +2,13 @@ CREATE TABLE usuario (
 	id INTEGER PRIMARY KEY,
 	email VARCHAR(100),
 	nome VARCHAR(100),
-	senha VARCHAR(100),
-	is_admin BOOLEAN
+	senha VARCHAR(100)
 );
 
 CREATE TABLE pedidos (
 	id INTEGER PRIMARY KEY,
 	data DATE,
-	valor DECIMAL(10,2),
+	valor NUMERIC(10,2),
 	fk_usuario_id INTEGER
 );
 
@@ -17,10 +16,9 @@ CREATE TABLE produtos (
 	id INTEGER PRIMARY KEY,
 	quantidade INTEGER,
 	nome VARCHAR(100),
-	preco DECIMAL(10,2),
+	preco NUMERIC(10,2),
 	descricao VARCHAR(255),
-	url_imagem VARCHAR(255),
-	fk_categoria_id INTEGER
+	url_imagem VARCHAR(255)
 );
 
 CREATE TABLE categoria (
@@ -40,7 +38,7 @@ CREATE TABLE avaliacao (
 CREATE TABLE item_pedido (
 	id INTEGER PRIMARY KEY,
 	quantidade INTEGER,
-	preco_unitario DECIMAL(10,2),
+	preco_unitario NUMERIC(10,2),
 	fk_pedidos_id INTEGER,
 	fk_produtos_id INTEGER
 );
