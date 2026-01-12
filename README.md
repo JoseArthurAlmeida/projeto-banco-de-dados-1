@@ -21,14 +21,29 @@ O projeto inclui:
 
 O projeto utiliza a plataforma Neon para hospedagem de dados. Abaixo, a URL de conexão com nível de acesso somente leitura (Read-Only): <br>
 ### Conexão por Variáveis
-- PGHOST: `ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech`
-- PGDATABASE: `neondb`
-- PGUSER: `read_only_user`
-- PGPASSWORD: `npg_t7p5IbShXUwz`
+- PGHOST:
+```bash
+ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech
+```
+- PGDATABASE:
+```bash
+neondb
+```
+
+- PGUSER:
+```bash
+read_only_user
+```
+- PGPASSWORD:
+```bash
+npg_t7p5IbShXUwz
+```
 
 ### URL de Conexão (Formato URI)
 **Connection String (URI):**
-`postgresql://read_only_user:npg_t7p5IbShXUwz@ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require`
+```bash
+postgresql://read_only_user:npg_t7p5IbShXUwz@ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+```
 
 ## Continuidade do Banco de Dados
 
