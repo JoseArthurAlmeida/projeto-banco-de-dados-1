@@ -17,6 +17,19 @@ O projeto inclui:
 - **Esquema Lógico**
   <img src="modelagens/Logico.png">
 
+## URL de Conexão com o Banco de Dados
+
+O projeto utiliza a plataforma Neon para hospedagem de dados. Abaixo, a URL de conexão com nível de acesso somente leitura (Read-Only): <br>
+### Conexão por Variáveis
+- PGHOST: `ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech`
+- PGDATABASE: `neondb`
+- PGUSER: `read_only_user`
+- PGPASSWORD: `npg_t7p5IbShXUwz`
+
+### URL de Conexão (Formato URI)
+**Connection String (URI):**
+`postgresql://read_only_user:npg_t7p5IbShXUwz@ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require`
+
 ## Continuidade do Banco de Dados
 
 A ideia do banco de dados é uma continuidade do projeto da disciplina de Programação Orientada a Objetos, o projeto pode
@@ -29,3 +42,4 @@ ser encontrado no seguinte repositório:
 - brModelo - Ferramenta para modelagem de banco de dados
 - PostgreSQL - Sistema de gerenciamento de banco de dados
 - DataGrip e DBeaver - Cliente de Banco de Dados
+- Neon - Serverless Postgres
