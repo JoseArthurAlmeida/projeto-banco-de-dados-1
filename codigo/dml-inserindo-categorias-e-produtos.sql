@@ -17,8 +17,7 @@ INSERT INTO
 		descricao,
 		preco,
 		quantidade,
-		fk_categoria_id,
-		url_imagem
+		fk_categoria_id
 	)
 VALUES
 	(
@@ -27,8 +26,7 @@ VALUES
 		'Confiável e pronto para usar, este teclado com fio oferece uma conexão estável e digitação precisa para todas as suas tarefas.',
 		25.0,
 		10,
-		1,
-		'teclado.png'
+		1
 	),
 	(
 		2,
@@ -36,8 +34,7 @@ VALUES
 		'Este mouse com fio oferece precisão e confiabilidade para todas as suas tarefas.',
 		10.0,
 		10,
-		2,
-		'mouse.png'
+		2
 	),
 	(
 		3,
@@ -45,8 +42,7 @@ VALUES
 		'Desfrute de imagens nítidas e vibrantes com este monitor Full HD de 22 polegadas. Ideal para trabalho, estudo e entretenimento.',
 		350.0,
 		10,
-		3,
-		'monitor_22.png'
+		3
 	),
 	(
 		4,
@@ -54,8 +50,7 @@ VALUES
 		'O Intel Core i5-3330 é um processador quad-core da 3ª geração, ideal para computadores de mesa, oferecendo desempenho sólido para tarefas do dia a dia e multitarefas.',
 		150.0,
 		10,
-		4,
-		'intel_i5_3330.png'
+		4
 	),
 	(
 		5,
@@ -63,8 +58,7 @@ VALUES
 		'O AMD FX-4300 é um processador quad-core de 3.8GHz, ideal para PCs mais antigos, oferecendo desempenho básico para uso diário e jogos que não exigem muito.',
 		160.0,
 		10,
-		4,
-		'amd_fx.png'
+		4
 	),
 	(
 		6,
@@ -72,8 +66,7 @@ VALUES
 		'A MSI ATI Radeon HD 5450 é uma placa de vídeo de baixo perfil projetada para oferecer desempenho gráfico básico e funcionalidade de vídeo de alta definição.',
 		150.0,
 		10,
-		5,
-		'msi_5450.png'
+		5
 	),
 	(
 		7,
@@ -81,8 +74,7 @@ VALUES
 		'A RX 550 é uma placa de vídeo que pode rodar diversos jogos, mas com configurações e resoluções mais baixas, especialmente em jogos mais recentes e exigentes.',
 		400.0,
 		10,
-		5,
-		'rx550.png'
+		5
 	),
 	(
 		8,
@@ -90,8 +82,7 @@ VALUES
 		'A GTX 1650 é uma placa de vídeo de entrada, adequada para jogos em Full HD (1080p) com configurações gráficas médias a baixas, sendo uma boa opção para quem busca um bom custo-benefício.',
 		1200.0,
 		10,
-		5,
-		'msi_1650.png'
+		5
 	),
 	(
 		9,
@@ -99,8 +90,7 @@ VALUES
 		'Gabinete com led.',
 		350.0,
 		10,
-		6,
-		'gabinete_games.png'
+		6
 	),
 	(
 		10,
@@ -108,8 +98,7 @@ VALUES
 		'Gabinete comum.',
 		70.0,
 		10,
-		6,
-		'gabinete.png'
+		6
 	),
 	(
 		11,
@@ -117,8 +106,7 @@ VALUES
 		'Placa mãe para processadores Intel soquete lga 1155 com chipset b75.',
 		300.0,
 		10,
-		7,
-		'placa_mae_1155_b75.png'
+		7
 	),
 	(
 		12,
@@ -126,8 +114,7 @@ VALUES
 		'Placa mãe para processadores AMD soquete AM3+.',
 		300.0,
 		10,
-		7,
-		'placa_mae_am3+.png'
+		7
 	),
 	(
 		13,
@@ -135,8 +122,7 @@ VALUES
 		'Memória ram 8gb DDR3 com frequência de 1333 MHz.',
 		60.0,
 		10,
-		8,
-		'ram_ddr3.png'
+		8
 	),
 	(
 		14,
@@ -144,6 +130,5 @@ VALUES
 		'Memória ram 8gb DDR4 com frequência de 3200 MHz.',
 		150.0,
 		10,
-		8,
-		'ram_ddr4.png'
+		8
 	);
