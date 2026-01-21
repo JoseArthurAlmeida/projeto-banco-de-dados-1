@@ -1,46 +1,52 @@
 CREATE TABLE usuario (
 	id INTEGER PRIMARY KEY,
-	email VARCHAR(100),
-	nome VARCHAR(100),
-	senha VARCHAR(100)
+	email VARCHAR(100) NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	senha VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE pedidos (
 	id INTEGER PRIMARY KEY,
-	data DATE,
-	valor NUMERIC(10,2),
-	fk_usuario_id INTEGER
-);
-
-CREATE TABLE produtos (
-	id INTEGER PRIMARY KEY,
-	quantidade INTEGER,
-	nome VARCHAR(100),
-	preco NUMERIC(10,2),
-	descricao VARCHAR(255),
-	url_imagem VARCHAR(255)
+	data DATE NOT NULL DEFAULT CURRENT_DATE,
+	valor NUMERIC(10, 2) NOT NULL
+		CONSTRAINT chk_pedidos_valor_nao_negativo CHECK (valor >= 0),
+	fk_usuario_id INTEGER NOT NULL
 );
 
 CREATE TABLE categoria (
 	id INTEGER PRIMARY KEY,
-	nome VARCHAR(50)
+	nome VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE produtos (
+	id INTEGER PRIMARY KEY,
+	quantidade INTEGER NOT NULL
+		CONSTRAINT chk_quantidade_nao_negativa CHECK (quantidade >= 0),
+	nome VARCHAR(100) NOT NULL,
+	preco NUMERIC(10, 2) NOT NULL
+		CONSTRAINT chk_preco_nao_negativo CHECK (preco >= 0),
+	descricao VARCHAR(255),
+	fk_categoria_id INTEGER NOT NULL
 );
 
 CREATE TABLE avaliacao (
 	id INTEGER PRIMARY KEY,
-	comentario VARCHAR(255),
-	nota INTEGER,
-	data_avaliacao DATE,
-	fk_produtos_id INTEGER,
-	fk_usuario_id INTEGER
+	comentario VARCHAR(255) NOT NULL,
+	nota INTEGER NOT NULL
+		CONSTRAINT chk_avaliacao_nota_intervalo CHECK (nota >= 1 AND nota <= 5),
+	data_avaliacao DATE NOT NULL DEFAULT CURRENT_DATE,
+	fk_produtos_id INTEGER NOT NULL,
+	fk_usuario_id INTEGER NOT NULL
 );
 
 CREATE TABLE item_pedido (
 	id INTEGER PRIMARY KEY,
-	quantidade INTEGER,
-	preco_unitario NUMERIC(10,2),
-	fk_pedidos_id INTEGER,
-	fk_produtos_id INTEGER
+	quantidade INTEGER NOT NULL
+		CONSTRAINT chk_item_pedido_quantidade_positiva CHECK (quantidade > 0),
+	preco_unitario NUMERIC(10, 2) NOT NULL
+		CONSTRAINT chk_item_pedido_preco_nao_negativo CHECK (preco_unitario >= 0),
+	fk_pedidos_id INTEGER NOT NULL,
+	fk_produtos_id INTEGER NOT NULL
 );
 
 /* Se apagar usuario, apaga os pedidos dele */
