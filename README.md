@@ -19,7 +19,7 @@ O projeto inclui:
 
 ## URL de Conexão com o Banco de Dados
 
-O projeto utiliza a plataforma Neon para hospedagem de dados. Abaixo, a URL de conexão com nível de acesso somente leitura (Read-Only): <br>
+O projeto utiliza a plataforma Neon para hospedagem do banco dados. Abaixo, a URL de conexão com nível de acesso somente leitura (Read-Only):
 ### Conexão por Variáveis
 - PGHOST:
 ```bash
