@@ -17,33 +17,18 @@ O projeto inclui:
 - **Esquema Lógico**
   <img src="modelagens/Logico.png">
 
-## URL de Conexão com o Banco de Dados
+## Códigos
 
-O projeto utiliza a plataforma Neon para hospedagem do banco de dados. Abaixo, a URL de conexão com nível de acesso somente leitura (Read-Only):
-### Conexão por Variáveis
-- PGHOST:
-```bash
-ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech
-```
-- PGDATABASE:
-```bash
-neondb
-```
+O projeto inclui os scripts SQL necessários para a criação da estrutura, povoamento e consulta do banco de dados.
 
-- PGUSER:
-```bash
-read_only_user
-```
-- PGPASSWORD:
-```bash
-npg_t7p5IbShXUwz
-```
+- **[Script de Criação (DDL)](codigo/ddl-loja-virtual.sql)**
+    - Contém os comandos `CREATE TABLE` para todas as entidades do banco de dados (`usuario`, `produtos`, `pedidos`, `categoria` `avaliacao`).
+    - Define todas as colunas, tipos de dados, chaves primárias e restrições de integridade (`NOT NULL`, `CHECK`).
+    - Estabelece os relacionamentos entre as tabelas através de `FOREIGN KEYs`, incluindo as regras de `ON DELETE CASCADE` e `ON DELETE RESTRICT` para garantir a consistência dos dados.
 
-### URL de Conexão (Formato URI)
-**Connection String (URI):**
-```bash
-postgresql://read_only_user:npg_t7p5IbShXUwz@ep-calm-fog-acmtx5gl-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
-```
+- **[Script de Consultas (DML)](codigo/consultas.sql)**
+    - Apresenta uma série de consultas `SELECT` para demonstrar a utilidade do banco de dados e testar a integridade do esquema.
+    - As consultas variam em complexidade, desde buscas simples e filtros até `JOINs`, agregações (`COUNT`, `SUM`, `AVG`) e subqueries para gerar relatórios e análises de negócio.
 
 ## Continuidade do Banco de Dados
 
